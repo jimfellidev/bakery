@@ -1,0 +1,101 @@
+.link {
+  margin-top: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.link__image {
+  margin: 0 auto;
+  height: 80px;
+  width: 150px;
+  background-color: black;
+  margin-bottom: 40px;
+  text-decoration: none;
+  border-top: solid 1px white;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 20;
+  border-bottom: solid 1px purple;
+}
+
+@media only screen and (min-width: 768px) {
+  .link__image {
+    width: 20%;
+    max-width: 250px;
+  }
+}
+
+.link__image:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  width: 50px;
+  z-index: -10;
+}
+
+.link__image:hover:after {
+  left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.link__image:hover, .link__image:active {
+  letter-spacing: 5px;
+}
+
+.link__content {
+  font-family: 'Playball', cursive;
+  padding-top: 16px;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .link__content {
+    font-size: 20px;
+    padding-top: 8px;
+  }
+}
+
+.link__content:after, .link__content:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid black;
+  bottom: 0px;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+  height: 0;
+}
+
+.link__content:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+.link__image:hover .link__content:after,
+.link__content:hover:after,
+.link__image:hover .link__content:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+/*# sourceMappingURL=home.css.map */
