@@ -4,6 +4,79 @@
     width: 100%;
     height: 20px;
     border-top: solid 2px black;
+    &__me {
+        padding-top: 30px;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        @media only screen and (min-width: 768px) {
+            width: 80%;
+        }
+        
+        &-title {
+
+        }
+        &-content {
+            text-align: left;
+            letter-spacing: .4px;
+            font-size: 17px;
+            @media only screen and (min-width: 768px) {
+                word-spacing: 1.5px;
+                line-height: 24px;
+            }
+        }
+
+    }
+
+    &__passion {
+        padding-top: 20px;
+        width: 90%;
+        margin: 0 auto;
+        border-top: solid 1px purple;
+        padding-bottom: 50px;
+        @media only screen and (min-width: 768px) {
+            width: 80%;
+        }
+    }
+    &__pas-title {
+
+    }
+    &__pas-content {
+        margin: 0 auto;
+        text-align: left;
+        letter-spacing: .4px;
+        font-size: 17px;
+        @media only screen and (min-width: 768px) {
+            word-spacing: 1.5px;
+            line-height: 24px;
+        }
+    }
+
+
+    &__different {
+        width: 90%;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin: 0 auto;
+        border-top: solid 1px purple;
+        @media only screen and (min-width: 768px) {
+            width: 80%;
+        }
+    }
+    &__dif-title {
+
+    }
+    &__dif-content {
+        text-align: left;
+        letter-spacing: .4px;
+        font-size: 17px;
+        @media only screen and (min-width: 768px) {
+            word-spacing: 1.5px;
+            line-height: 24px;
+            
+        }
+
+    }
 }
 
 
