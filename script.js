@@ -309,3 +309,8 @@ $("#myDropdown").click(function() {
     $("#hamburger").removeClass("is-active");
     $("#myDropdown").removeClass("toggle-active");
 });
+
+
+// Copyright
+const currentYear = new Date().getFullYear();
+document.getElementById('copyright').innerText = currentYear;
