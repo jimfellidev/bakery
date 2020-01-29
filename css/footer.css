@@ -1,8 +1,8 @@
 .footer {
   display: block;
   position: relative;
-  -webkit-box-shadow: 0px -10px 15px -18px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px -10px 15px -18px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .footer__container {
@@ -17,7 +17,7 @@
           justify-content: space-evenly;
   list-style: none;
   margin-bottom: 0;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
 }
 
 .footer__copyright {

@@ -314,3 +314,22 @@ $("#myDropdown").click(function() {
 // Copyright
 const currentYear = new Date().getFullYear();
 document.getElementById('copyright').innerText = currentYear;
+
+
+
+
+
+
+
+
+
+
+
+
+            // ACTIVE ATTRIBUTE ON LINK 
+
+$(".topnav__link-wrap a").each(function() {
+    if ((window.location.pathname.indexOf($(this).attr('href'))) > -1) {
+        $(this).addClass('active-link');
+    }
+});

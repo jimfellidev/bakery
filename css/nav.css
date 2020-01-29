@@ -168,4 +168,28 @@
 .dropdown a.is-current, .dropdown a:hover:before {
   left: 0;
 }
+
+.active-link {
+  text-decoration: none;
+  position: relative;
+}
+
+.active-link:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: 23px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+  background: black;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.active-link:hover:after {
+  width: 80%;
+  background: purple;
+}
 /*# sourceMappingURL=nav.css.map */

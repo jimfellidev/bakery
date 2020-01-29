@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -9,9 +11,12 @@ body {
     display: flex;
     flex-flow: row wrap;
     padding-top: 20px;
-    width: 90%;
+    // width: 90%;
     margin: 0 auto;
     list-style-type: none;
+    @media only screen and (min-width: 690px) {
+        width: 90%;
+    }
     &__li {
         padding: 10px 10px;
         transition: all 0.3s ease;
@@ -23,8 +28,10 @@ body {
 }
 
 .app {
-    max-width: 100%;
+    max-width: 1365px;
+    margin: 0 auto;
     padding-top: 7vh;
+
     &__title {
         padding-top: 30px;
         padding-bottom: 15px;
@@ -102,6 +109,7 @@ body {
     background-size: cover;
     color: black;
     border-top: solid 4px pink;
+
     &__front-content {
         font-family: 'Dancing Script', cursive;
         margin-top: -18px;

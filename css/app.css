@@ -14,9 +14,14 @@ body {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   padding-top: 20px;
-  width: 90%;
   margin: 0 auto;
   list-style-type: none;
+}
+
+@media only screen and (min-width: 690px) {
+  .flashcard-list {
+    width: 90%;
+  }
 }
 
 .flashcard-list__li {
@@ -31,7 +36,8 @@ body {
 }
 
 .app {
-  max-width: 100%;
+  max-width: 1365px;
+  margin: 0 auto;
   padding-top: 7vh;
 }
 

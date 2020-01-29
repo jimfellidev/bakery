@@ -39,9 +39,9 @@
         }
 
         // ----See if you can figure out a dif way to do this letter spacing for safari----
-        &:hover, &:active {
-            letter-spacing: 5px;
-        }
+        // &:hover, &:active {
+        //     letter-spacing: 5px;
+        // }
     }
 
     &__content {
@@ -72,8 +72,6 @@
         }
     }
 }
-
-
 
 
 .link__image:hover .link__content:after,

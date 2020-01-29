@@ -49,10 +49,6 @@
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.link__image:hover, .link__image:active {
-  letter-spacing: 5px;
-}
-
 .link__content {
   font-family: 'Playball', cursive;
   padding-top: 16px;
